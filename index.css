@@ -1,0 +1,124 @@
+/* Common styles for both forms */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles specific to LeaveForm.js */
+
+.leave-form {
+  text-align: center;
+}
+
+.leave-form h1 {
+  color: #333;
+}
+
+.leave-form-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.leave-form-table th, .leave-form-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.leave-form-table th {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.leave-form-button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.leave-form-button:hover {
+  background-color: #45a049;
+}
+
+.status {
+  margin-top: 20px;
+}
+
+.status p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.status.pending {
+  color: #ff9800;
+}
+
+.status.accepted {
+  color: #4caf50;
+}
+
+.status.rejected {
+  color: #f44336;
+}
+
+/* Add these styles to your existing style.css file */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* 100% of the viewport height */
+}
+
+.leave-form {
+  width: 100%;
+  max-width: 400px; /* Set a max width if needed */
+}
+
+.leave-form-table {
+  width: 100%;
+}
+
+.leave-form-input,
+.leave-form-select,
+.leave-form-textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 4px 0;
+  box-sizing: border-box;
+}
+
+.leave-form-button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Add any additional styling as needed */
